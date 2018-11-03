@@ -15,3 +15,4 @@ window.party = function () {
   confetti.render();
 };
 
+party();
