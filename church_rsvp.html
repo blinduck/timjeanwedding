@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>wearetimjean</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/css/uikit.min.css"/>
+  <!-- UIkit JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit-icons.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit-icons.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Charmonman|Dancing+Script|Lobster|Satisfy" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+
+
+</head>
+<body>
+<nav class="uk-navbar-container" uk-navbar>
+  <div class="uk-navbar-left">
+
+    <ul class="uk-navbar-nav">
+      <li><a href="/"><span uk-icon="home"></span>&nbsp; Home</a></li>
+      <li class="uk-active"><a href="/church_rsvp.html">Church RSVP</a></li>
+      <li><a href="/dinner_rsvp.html">Dinner RSVP</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+
+<div class="uk-margin-top uk-container uk-flex uk-flex-column uk-flex-middle">
+
+  <img src="church.png" alt="" style="width: 150px;"/>
+  <h2 class="t3 uk-margin-top">RSVP - Church Ceremony</h2>
+
+  <form action="" class="uk-form-horizontal" uk-margin style="width: 600px;">
+    <div>
+      <label class="uk-form-label">First Name*</label>
+      <div class="uk-form-controls">
+        <input type="text" class="uk-input" required/>
+      </div>
+    </div>
+    <div>
+      <label class="uk-form-label">Last Name*</label>
+      <div class="uk-form-controls">
+        <input type="text" class="uk-input" required/>
+      </div>
+    </div>
+    <div>
+      <label class="uk-form-label">Email</label>
+      <div class="uk-form-controls">
+        <input type="email" class="uk-input" required/>
+      </div>
+    </div>
+    <div>
+      <label class="uk-form-label">Will you be bringing your family?</label>
+      <div class="uk-form-controls">
+        <select class="uk-select" name="bringing_more" id="">
+          <option value="0" selected>No</option>
+          <option value="1">Plus 1</option>
+          <option value="2">2 More</option>
+          <option value="3">3 More</option>
+          <option value="4">4 More</option>
+        </select>
+      </div>
+    </div>
+    <input type="submit" class="uk-button uk-button-primary uk-width-1-1 uk-margin-top" />
+
+  </form>
+</div>
+
+
+</body>
+</html>

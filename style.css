@@ -1,0 +1,32 @@
+section {
+    background-color: #f3f3f3;
+    height: 700px;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+.t1 { font-family: 'Dancing Script', cursive; }
+.t2 { font-family: 'Lobster', cursive; }
+.t3 { font-family: 'Satisfy', cursive; }
+.t4 { font-family: 'Charmonman', cursive; }
+h1 { font-size: 6em;}
+h2 { font-size: 3em;}
+
+.white-border {
+    border: 30px solid white;
+}
+
+
+/*budgundy =>  800020*/
+/*green => #008060 */

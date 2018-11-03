@@ -3,11 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>wearetimjean</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/css/uikit.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/css/uikit.min.css"/>
   <!-- UIkit JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit-icons.min.js"></script>
-  <script src="uikit/dist/js/uikit-icons.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit-icons.min.js"></script>
+  <script src="confetti.js"></script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Charmonman|Dancing+Script|Lobster|Satisfy" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+
 
 </head>
 <body>
@@ -15,13 +21,38 @@
   <div class="uk-navbar-left">
 
     <ul class="uk-navbar-nav">
-      <li class="uk-active"><a href="#"><span uk-icon="home"></span>&nbsp; Home</a></li>
-      <li><a href="#">Church RSVP</a></li>
-      <li><a href="#">Dinner RSVP</a></li>
+      <li class="uk-active"><a href="/"><span uk-icon="home"></span>&nbsp; Home</a></li>
+      <li><a href="/church_rsvp.html">Church RSVP</a></li>
+      <li><a href="/dinner_rsvp.html">Dinner RSVP</a></li>
     </ul>
 
   </div>
 </nav>
 
+<canvas id="confetti-canvas" style="width:100%; height:2000px; position:fixed; top: 80px; left: 0;"></canvas>
+
+<section style="background-color: #b4d1cd; color: #004856" class="uk-flex uk-flex-column uk-flex-middle uk-flex-center">
+  <div class="uk-flex uk-flex-column uk-flex-center uk-flex-middle uk-animation-fade">
+    <div class="white-border">
+      <h1 class="t3 uk-margin-remove uk-text-center">tim & jean</h1>
+      <h1 class="t3 uk-margin-remove uk-text-center">tie the knot</h1>
+      <h2 class="t3 uk-text-center">2nd March 2018</h2>
+    </div>
+  </div>
+</section>
+
+<section class="parallax" style="background-image: url('p2.jpg')"></section>
+
+
+<div style="height:700px">
+</div>
+
+<section class="parallax" style="background-image: url('p1.jpg')"></section>
+
+<div style="height:700px">
+</div>
+
+
+<script src="index.js"></script>
 </body>
 </html>
