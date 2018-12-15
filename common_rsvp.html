@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>wearetimjean</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/css/uikit.min.css"/>
+  <!-- UIkit JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit-icons.min.js"></script>
+  <script src="https://unpkg.com/mithril/mithril.js"></script>
+  <script src="awesomplete-gh-pages/awesomplete.min.js"></script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Charmonman|Dancing+Script|Lobster|Satisfy" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="awesomplete-gh-pages/awesomplete.css"/>
+
+
+</head>
+
+<style>
+  input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: darkgray;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2em;
+  }
+  .awesomplete > ul:before {
+    display: none !important;
+  }
+  .awesomplete > li {
+    text-align: center;
+  }
+</style>
+
+<body>
+<nav class="uk-navbar-container" uk-navbar>
+  <div class="uk-navbar-left">
+
+    <ul class="uk-navbar-nav">
+      <li><a href="index.html"><span uk-icon="home"></span>&nbsp; Home</a></li>
+      <li class="uk-active"><a href="common_rsvp.html">RSVP</a></li>
+    </ul>
+
+  </div>
+
+
+</nav>
+
+
+<style>
+  .fancy {animation:fade-in 0.5s;}
+  @keyframes fade-in {
+    from {opacity:0;}
+    to {opacity:1;}
+  }
+  .fancy {animation:move 0.5s;}
+  @keyframes fade-in {
+    from {:0;}
+    to {opacity:1;}
+  }
+</style>
+
+<div class="uk-margin-top uk-container">
+  <div id="mithril" style="padding-bottom:30px;"></div>
+</div>
+
+<script src="rsvp.js"></script>
+</body>
+</html>
